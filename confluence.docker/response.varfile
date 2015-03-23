@@ -1,0 +1,12 @@
+#install4j response file for Confluence 5.6.4
+#Thu Oct 30 20:45:56 EDT 2014
+rmiPort$Long=8000
+app.install.service$Boolean=true
+existingInstallationDir=/usr/local/Confluence
+sys.confirmedUpdateInstallationString=false
+sys.languageId=en
+sys.installationDir=/var/confluence/install
+app.confHome=/var/confluence/data
+executeLauncherAction$Boolean=true
+httpPort$Long=8090
+portChoice=default
