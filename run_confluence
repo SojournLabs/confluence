@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+SCRIPT_DIR=$(cd $(dirname $0); pwd)
+
+DOCKER_DAEMONIZE=TRUE VAPR_USE_DATA_CONTAINER=TRUE VAPR_DATA_DIR_config=${SCRIPT_DIR}/confluence.config ${SCRIPT_DIR}/dockertools/bin/run confluence.docker confluence /var/confluence/install/bin/start-confluence.sh -fg
