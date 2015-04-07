@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+cd /installers/confluence;
+wget --no-check-certificate 'https://www.atlassian.com/software/confluence/downloads/binary/atlassian-confluence-5.7.1-x64.bin';
+sh /installers/confluence/atlassian-confluence-5.7.1-x64.bin -q -varfile /installers/confluence/response.varfile;
+sed -i 's|confluence1|confluence|' /var/confluence/install/bin/user.sh;
+chown -R confluence:confluence /var/confluence/*
